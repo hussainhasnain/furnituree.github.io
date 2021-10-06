@@ -1,0 +1,615 @@
+/*================================== Media Queries ============================*/
+/*================================== Fonts =====================================*/
+/*================================== Colors =====================================*/
+/*================================== Center Our Content ===========================*/
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 75em) {
+  .row {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .row {
+    max-width: 55rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 24em) {
+  .row {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+}
+
+/*================================== Basic Styling =====================================*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #9BB0A5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #384B42;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
+@media only screen and (max-width: 24em) {
+  html {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #9BB0A5;
+  line-height: 1.6;
+}
+
+/*================================== Header Starts Here =====================================*/
+.header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5rem 0;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.header__textbox {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__textbox {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.header__textbox > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.header__textbox--para {
+  font-size: 1.6rem;
+}
+
+.header__photo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+/*================ Logo ================*/
+.logo {
+  font-size: 2rem;
+}
+
+/*================ Navigation Starts ================*/
+.nav {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .nav {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.nav__list *:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .nav__list *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .nav__list {
+    display: none;
+  }
+}
+
+.nav__item {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .nav__item {
+    display: block;
+    text-align: center;
+  }
+}
+
+.nav__link {
+  font-size: 1.6rem;
+}
+
+.nav__link:hover {
+  color: #3DA57B;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/*================ Navigation Ends ================*/
+/*================ Icons Starts ================*/
+.icon__menu {
+  display: none;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .icon__menu {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .icon__menu {
+    display: block;
+  }
+}
+
+.icon__star {
+  color: yellowgreen;
+  font-size: 1.4rem;
+}
+
+.icon__star--rate {
+  font-size: 1.2rem;
+}
+
+.icon__social {
+  font-size: 3rem;
+  color: #3DA57B;
+  cursor: pointer;
+}
+
+/*================ Icons Ends ================*/
+/*================ Button Starts ================*/
+.btn {
+  display: inline-block;
+  padding: .8rem 1.5rem;
+}
+
+.btn__primary {
+  background-color: #3DA57B;
+  color: #f9fafb;
+  border: 1px solid #3DA57B;
+  font-size: 1.5rem;
+}
+
+.btn__primary:hover {
+  color: #3DA57B;
+  background-color: #f9fafb;
+  border: 1px solid #3DA57B;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.btn__light {
+  color: #fa064f;
+  border: 1px solid #fa064f;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.btn__light--top {
+  text-align: right;
+  -webkit-transform: translateY(-15rem);
+          transform: translateY(-15rem);
+}
+
+.btn__light:hover {
+  color: #f9fafb;
+  background-color: #fa064f;
+  border: 1px solid #fa064f;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+/*================ Button Ends ================*/
+/*================ Headings start ================*/
+.heading-primary {
+  font-size: 5.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.heading-primary--span {
+  color: #fa064f;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.heading-secondary__features {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.heading-secondary__watch {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: inherit;
+}
+
+.heading-secondary__product {
+  margin-bottom: 4rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.heading-tertiary__testimonial {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+/*================ Headings Ends ================*/
+/*================================== Header Ends Here =====================================*/
+/*============================= Section About starts Here =================================*/
+.about {
+  padding: 15rem 0;
+}
+
+.about__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about__photo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  position: relative;
+  border-radius: 10rem;
+}
+
+.about__photo--img {
+  position: absolute;
+  max-width: 40%;
+  border-radius: 1rem;
+}
+
+.about__photo--img-2 {
+  top: -27rem;
+  left: 10rem;
+}
+
+.about__photo--img-3 {
+  top: 0;
+  left: 0;
+}
+
+.about__photo--img-4 {
+  top: -2rem;
+  left: 25rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.about__textbox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 5vw;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .about__textbox {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.about__textbox > *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.about__textbox--para {
+  font-size: 1.6rem;
+}
+
+/*============================= Section About ends Here =================================*/
+/*============================= Section Product starts Here =================================*/
+.product {
+  padding: 10rem 0;
+}
+
+.product__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: (2vw)[12];
+      grid-template-rows: repeat(12, 2vw);
+  grid-gap: 5rem;
+}
+
+.product__grid--items-1 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+}
+
+.product__grid--items-2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1 / 7;
+}
+
+.product__grid--items-3 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 6;
+  grid-row: 3 / 9;
+}
+
+.product__grid--items-4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 6;
+  grid-row: 7 / 13;
+}
+
+.product__grid--items-5 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 4;
+  grid-column: 5 / 9;
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 4;
+  grid-row: 9 / 13;
+}
+
+.product__grid--items-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  display: block;
+}
+
+/*============================= Section Product ends Here =================================*/
+/*============================= Section Testimonial Starts Here =================================*/
+.testimonial {
+  padding: 10rem 0;
+}
+
+.testimonial__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .testimonial__flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.testimonial__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__left--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonial__left--textbox-para {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial__left--textbox-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial__left--textbox-img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.testimonial__left--textbox-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.testimonial__left--textbox-name span {
+  display: block;
+}
+
+.testimonial__left--photo-img {
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+}
+
+.testimonial__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 5vw;
+}
+
+.testimonial__right *:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+/*============================= Section Testimonial Ends Here =================================*/
+/*============================= Footer Starts Here =================================*/
+.footer {
+  padding: 8rem 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.footer__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer__grid {
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
+.footer__nav--list > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer__nav--link {
+  font-size: 1.6rem;
+}
+
+.footer__nav--link:hover {
+  color: #fa064f;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.footer__nav--link-heading {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.form__input {
+  padding: 1rem 1.5rem;
+}
+
+/*============================= Footer Ends Here =================================*/
+/*# sourceMappingURL=main.css.map */
